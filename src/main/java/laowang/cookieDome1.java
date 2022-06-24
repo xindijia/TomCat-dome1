@@ -13,6 +13,7 @@ public class cookieDome1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Cookie cookie = new Cookie("username", "123456");
+        resp.addCookie(cookie);
     }
 
     @Override
